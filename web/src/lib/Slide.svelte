@@ -57,7 +57,7 @@
 			src="/img/{name}"
 			alt=""
 			decoding="async"
-			class="min-h-0 min-w-0 flex-1 object-cover"
+			class="min-h-0 min-w-0 flex-1 object-contain"
 			data-testid={i === 0 ? testId : undefined}
 		/>
 	{/each}
