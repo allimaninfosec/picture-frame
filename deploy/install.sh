@@ -2,9 +2,9 @@
 # Fetch, verify, and provision the picture-frame on a Raspberry Pi. See --help.
 set -euo pipefail
 
-REPO="MateEke/picture-frame"
+REPO="allimaninfosec/picture-frame"
 # Trust anchor; must match deploy/minisign.pub and the updater's embedded key.
-MINISIGN_PUBKEY="RWSn8v6e9fllWNQOZr6w2z8ic5NXGHtKMWxjxrjuu3SWj8BpoWxQLtHl"
+MINISIGN_PUBKEY="RWRs8+jIcim0x2EQK+/TdC6ojeInIR2Q1DaeIOIioGkbHAl2Y1ahmUIO"
 # Records which release's payload sits in INSTALL_DIR (binary + deploy/ templates).
 PAYLOAD_MARKER=".release"
 
@@ -140,7 +140,7 @@ usage() {
 install.sh: fetch, verify, and provision the picture-frame.
 
 Usage:
-  curl -fsSL https://github.com/MateEke/picture-frame/releases/latest/download/install.sh | sudo bash
+  curl -fsSL https://github.com/allimaninfosec/picture-frame/releases/latest/download/install.sh | sudo bash
   sudo bash install.sh [flags]
   sudo bash install.sh --uninstall
 
